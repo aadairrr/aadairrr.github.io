@@ -1,1 +1,127 @@
-Hello World
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Andrew Adair's Portfolio</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:thin">
+        <link rel="stylesheet" href="style/style.css" type="text/css">
+        <link rel="stylesheet" href="style/animate.css">
+    </head>
+    <body>
+        <div class="landing" id="one">
+            <div class="flexcontainer">
+                <div id="name" class="wow bounceInLeft">
+                    <h1>Andrew<br>Adair</h1>
+                </div>
+                <div class="wow bounceInRight">
+                    <table>
+                        <tr>
+                            <td>
+                                <a id="down" href="#thr"><img src="imgs/bo.jpg" /></a>
+                            </td>
+                            <td>
+                                <a id="down" href="#fou"><img src="imgs/h.jpg" /></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Blue Orb</h3>
+                                <h6>iOS app made with Swift 3</h6>
+                            </td>
+                            <td>
+                                <h3>Hurwitz Lab</h3>
+                                <h6>Website for the Hurwitz Lab</h6>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="down-arrow">
+                <a id="down" href="#two">
+                    <p>Read my Resume</p>
+                    <h2>&darr;</h2>
+                </a>
+            </div>
+        </div>
+        <div class="resume" id="two">
+            <div class="resume-cn">
+                <h2>Andrew Adair</h2>
+                <div style="float:left;width:50%" class="wow fadeInLeft">
+                    <div class="about-me">
+                        <h3>Education</h3>
+                        <p>B.S. in Computer Science from The University of Arizona</p>
+                    </div>
+                    <div class="about-me">
+                        <h3>Coursework</h3>
+                        <p>Object Oriented Programming and Design (Java)
+                            <br>Systems Programming and Unix (C/Shell Scripting)
+                            <br>Text Retrieval and Web Search (Java)
+                            <br>Web Programming (HTML, CSS, PHP, JavaScript)
+                            <br>Computer Organization (MIPS)
+                        </p>
+                    </div>
+                    <div class="about-me">
+                        <h3>Skills</h3>
+                        <p><strong>Programming: </strong>Java • C • HTML5 • CSS • PHP • JS</p>
+                        <p><strong>Other: </strong>Photoshop, Illustrator, Premier, After Effects, Word, Excel, PowerPoint</p>
+                    </div>
+                </div>
+                <div style="float:left;width:50%" class="wow fadeInRight">
+                    <div class="about-me">
+                        <h3>Experience</h3>
+                        <h4>Hurwitz Lab</h4>
+                        <h5>Software Engineering Intern (May 2017 - Present)</h5>
+                        <p>&bull;Developed web tools to sequence DNA Data through high-performance compute clusters.<br>&bull;Designed and created <a href="http://localhost/wordpress/index.php/about-us/#andrewadair">hurwitzlab.org</a>.</p>
+                        <br>
+                        <h4>Apple</h4>
+                        <h5>Technical Specialist (June 2014 - May 2017)</h5>
+                        <p>&bull;Installed and maintained customer software.<br>&bull;Created customer excitement through hundreds of interactions every week.</p>
+                        <br>
+                        <h4>Nova Home Loans</h4>
+                        <h5>Marketing Intern (May 2012 - August 2012)</h5>
+                        <p>&bull;Used programs such as Adobe Photoshop and Illustrator to prepare company advertisement material.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="down-arrow">
+                <p>See Some Work</p>
+                <a id="down" href="#thr"><h2>&darr;</h2></a>
+            </div>
+        </div>
+        <div class="blue-orb" id="thr">
+            <div class="flexcontainer">
+                <div class="wow slideInLeft">
+                    <h1>Blue Orb</h1>
+                    <p>Using Swift 3 and XCode, I designed and developed Blue Orb - an iOS game <a href="https://itunes.apple.com/us/app/blue-orb/id1237514427?mt=8">available on the App Store</a></p>
+                </div>
+                <img class="wow slideInRight" src="imgs/borb.png">
+            </div>
+            <div class="down-arrow">
+                <a id="down" href="#fou"><h2>&darr;</h2></a>
+            </div>
+        </div>
+        <div class="hurwitz" id="fou">
+            <div class="flexcontainer">
+                <div class="wow flipInY">
+                    <h1>Hurwitz Lab</h1>
+                    <p>Using HTML, CSS and Javascript, I designed <a href="http://hurwitzlab.org">HurwitzLab.org</a> for a leading microbiology lab at The University of Arizona</p>
+                    <img src="imgs/hlab.png" />
+                </div>
+            </div>
+        </div>
+        <script src="style/WOW.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+        <script>
+            $('#up, #down').on('click', function(e){
+                e.preventDefault();
+                var target = $($(this).get(0).href.slice(-4));
+                $('html, body').stop().animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+            });
+        </script>
+    </body>
+</html>
