@@ -74,19 +74,14 @@ h3{
     height: 100px;
     margin-top: -100px;
 }
-/* RESUME
--------------------------------------------*/
-.resume{
+
+.infoContainer{
     width: 100%;
     height: 100%;
-    background: rgb(25,25,75); /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(black, rgb(25,25,75)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(black, rgb(25,25,75)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(black, rgb(25,25,75)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(black, rgb(25,25,75)); /* Standard syntax (must be last) */
     text-align: center;
-    overflow: hidden;
 }
+/* RESUME
+-------------------------------------------*/
 .resume-cn{
     height: 100%;
     width: 100%;
@@ -98,29 +93,40 @@ h3{
 }
 /* BLUE ORB
 -------------------------------------------*/
-.blue-orb{
-    width: 100%;
-    height: 100%;
-    background: darkblue; /* For browsers that do not support gradients */
+.blue-orb img{
+    max-height: 90%;
+    max-width: 40%;
+}
+/* House Mom
+-------------------------------------------*/
+.housemom img{
+    max-height: 90%;
+    max-width: 40%;
+    background:url("../imgs/hm.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 86% 94%;
+}
+/* Gradients
+-------------------------------------------*/
+#two{
+    background: rgb(25,25,75); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(black, rgb(25,25,75)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(black, rgb(25,25,75)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(black, rgb(25,25,75)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(black, rgb(25,25,75)); /* Standard syntax (must be last) */
+}
+#thr{
+        background: darkblue; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(rgb(25,25,75), darkblue); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(rgb(25,25,75), darkblue); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(rgb(25,25,75), darkblue); /* For Firefox 3.6 to 15 */
     background: linear-gradient(rgb(25,25,75), darkblue); /* Standard syntax (must be last) */
-    text-align: center;
-    overflow: hidden;
 }
-.blue-orb img{
-    max-width: 30%;
-}
-/* Hurwitz Lab
--------------------------------------------*/
-.hurwitz{
-    width: 100%;
-    height: 100%;
+#fou{
     background: #008d98; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(darkblue, #008d98); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(darkblue, #008d98); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(darkblue, #008d98); /* For Firefox 3.6 to 15 */
     background: linear-gradient(darkblue, #008d98); /* Standard syntax (must be last) */
-    text-align: center;
 }
