@@ -18,15 +18,22 @@
                     <table>
                         <tr>
                             <td>
-                                <a id="down" href="#thr"><img src="imgs/bo.jpg" /></a>
+                                <a id="down" href="#fou"><img src="imgs/hm.png" /></a>
                             </td>
                             <td>
-                                <a id="down" href="#fou"><img src="imgs/h.jpg" /></a>
+                                <a id="down" href="#two"><img src="imgs/bo.jpg" /></a>
+                            </td>
+                            <td>
+                                <a id="down" href="#thr"><img src="imgs/h.jpg" /></a>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <h3>Blue Orb</h3>
+                                <h3>House Mom</h3>
+                                <h6>App for Greek Life Organizations</h6>
+                            </td>
+                            <td>
+                                <h3>Blue Orb Game</h3>
                                 <h6>iOS app made with Swift 3</h6>
                             </td>
                             <td>
@@ -39,11 +46,11 @@
             </div>
             <div class="down-arrow">
                 <a id="down" href="#two">
-                    <p>Read my Resume</p>
                     <h2>&darr;</h2>
                 </a>
             </div>
         </div>
+        <!--
         <div class="resume" id="two">
             <div class="resume-cn">
                 <h2>Andrew Adair</h2>
@@ -88,8 +95,21 @@
                 <p>See Some Work</p>
                 <a id="down" href="#thr"><h2>&darr;</h2></a>
             </div>
+        </div>-->
+        <div class="infoContainer housemom" id="two">
+            <div class="flexcontainer">
+                <div class="wow flipInY">
+                    <h1>HouseMom</h1>
+                    <p>HouseMom is an iOS, Android and Web app created for Fraternities and Sororities to help better track their members. <br /> Created using React on the frontend and Google's Firebase and Typescript to deploy functions on the backend, HouseMom is still in production.</p>
+                </div>
+                <img class="wow slideInRight" src="imgs/hmframe.png" >
+            </div>
+            <div class="down-arrow">
+                <a id="down" href="#thr"><h2>&darr;</h2></a>
+            </div>
         </div>
-        <div class="blue-orb" id="thr">
+        
+        <div class="infoContainer blue-orb" id="thr">
             <div class="flexcontainer">
                 <div class="wow slideInLeft">
                     <h1>Blue Orb</h1>
@@ -101,7 +121,7 @@
                 <a id="down" href="#fou"><h2>&darr;</h2></a>
             </div>
         </div>
-        <div class="hurwitz" id="fou">
+        <div class="infoContainer hurwitz" id="fou">
             <div class="flexcontainer">
                 <div class="wow flipInY">
                     <h1>Hurwitz Lab</h1>
@@ -110,6 +130,8 @@
                 </div>
             </div>
         </div>
+        
+        <!-- SCRIPTS -->
         <script src="style/WOW.js"></script>
         <script>
             new WOW().init();
