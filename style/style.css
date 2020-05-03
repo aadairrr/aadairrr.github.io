@@ -80,16 +80,10 @@ h3{
     height: 100%;
     text-align: center;
 }
-/* RESUME
+/* Apps
 -------------------------------------------*/
-.resume-cn{
-    height: 100%;
-    width: 100%;
-    text-align: center;
-}
-.about-me{
-    margin: 15px;
-    text-align: left;
+.apps img{
+    width: 300px;
 }
 /* BLUE ORB
 -------------------------------------------*/
