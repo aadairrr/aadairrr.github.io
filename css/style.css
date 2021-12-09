@@ -128,11 +128,11 @@ a:hover {
 }
 .content__card{
     background-color: var(--color-primary-200);
-    border-radius: var(--radius);
+/*    border-radius: var(--radius);*/
     box-shadow: var(--shadow-elevation-high);
     color: var(--color-neutral-200);
     padding: var(--gap);
-    width: 95vw;
+    width: 100vw;
     display: flex;
     flex-wrap: wrap;
 }
