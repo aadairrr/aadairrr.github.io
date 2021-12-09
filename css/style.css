@@ -135,6 +135,7 @@ a:hover {
     width: 100vw;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 .content h1, h3{
 	margin: auto;
